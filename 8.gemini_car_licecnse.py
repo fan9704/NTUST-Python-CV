@@ -29,9 +29,6 @@ def get_license(img):
     # 將 OpenCV 影像轉換為 Gemini API 接受的格式 Pillow Image
     pil_image = cv2_to_pil(img)
 
-    # 建立提示，指示 Gemini 辨識車牌
-    prompt = "請辨識圖片中的車牌號碼，並以純文字形式回傳。"
-
     response = gemini_vision(pil_image)
     # 提取辨識結果
     response_text = response.strip()
