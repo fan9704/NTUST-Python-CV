@@ -1,6 +1,7 @@
 def pattern_a():
     for row in range(1, 7):
         for col in range(1, row + 1):
+            # print(f"{row=},{col=}")
             print(col, end="")
         print()
 
@@ -13,10 +14,10 @@ def pattern_b():
 
 
 def pattern_c():
-    for i in range(1, 7):
-        print(" " * (7 - 1 - i), end="")
-        for j in range(i, 0, -1):
-            print(j, end="")
+    for row in range(1, 7):
+        print(" " * (7 - 1 - row), end="")
+        for col in range(row, 0, -1):
+            print(col, end="")
         print()
 
 

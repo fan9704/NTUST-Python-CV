@@ -1,6 +1,8 @@
-def my_find(sub, main):
-    for i in range(len(main) - len(sub) + 1):
-        if main[i:i + len(sub)] == sub:
+def my_find(s1,s2):
+    s1_length = len(s1)
+    s2_length = len(s2)
+    for start in range(s2_length-s1_length +1):
+        if s2[start:start+3] == s1:
             return True
     return False
 
