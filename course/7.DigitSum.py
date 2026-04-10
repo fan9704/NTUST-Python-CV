@@ -1,7 +1,9 @@
 def sumDigits(n):
     if n < 10:
+        print("最後的餘數" ,n)
         return n
     else:
+        print("本次取得的餘數", n % 10 )
         return sumDigits(n // 10) + n % 10
 
 

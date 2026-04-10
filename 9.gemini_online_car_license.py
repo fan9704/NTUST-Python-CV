@@ -9,7 +9,7 @@ def gemini_vision(image_data):
     client = genai.Client(api_key="YOUR API KEY")
     system_prompt = "辨識這張車牌的號碼‵，接下來我會傳送車牌的圖片，請只回傳車牌辨識內容"
     response = client.models.generate_content(
-        model="gemini-2.0-flash",
+        model="gemini-2.5-flash",
         contents=[system_prompt, image_data],
     )
     print(response.text)

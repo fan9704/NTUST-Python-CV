@@ -1,19 +1,19 @@
 def main():
     try:
         f()
-        print("After the function call")
+        print("2.After the function call")
     except IndexError:
-        print("Index out of bound")
+        print("2.Index out of bound")
     except:
-        print("Exception in main")
+        print("2.Exception in main")
 
 def f():
     try:
         s = "abc"
         print(s[5])  # 錯誤：IndexError
     except ZeroDivisionError:
-        print("Divided by zero")
+        print("1.Divided by zero")
     except IndexError:
-        print("Index out of bound")
+        print("1.Index out of bound")
 
 main()
